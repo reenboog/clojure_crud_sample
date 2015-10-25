@@ -1,10 +1,10 @@
 (ns tttback.db
-  (:use korma.db)
+  (:require [korma.db :as korma])
   (:require [environ.core :refer [env]]
             [ragtime.jdbc :as jdbc]
             [ragtime.repl :as repl]))
 
-(defdb db (postgres {:db (get env :tttback-db "restful_dev")
+(defdb db (korma.postgres {:db (get env :tttback-db "restful_dev")
                      :user (get env :tttback-db-user "restful_dev")
                      :password (get env :tttback-db-pass "pass_dev")
                      :host (get env :tttback-db-host "localhost")
