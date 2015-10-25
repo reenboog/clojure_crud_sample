@@ -72,7 +72,7 @@
         {:status 201
          :headers {"Location" (str "/products/" (:id new-prod))}})))
 
-  (route/not-found (response {:message "Page not found"})))
+  (route/not-found (response {:message "Unknown request"})))
 
 (defn wrap-log-request [handler]
   (fn [req]
