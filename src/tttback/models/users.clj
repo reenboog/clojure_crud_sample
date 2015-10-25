@@ -68,7 +68,6 @@
     (where {:id (user :id)})))
 
 (defn password-matches?
-  "Check to see if the password given matches the digest of the user's saved password"
   [id password]
   (some-> (select* e/users)
     (fields :password_digest)
