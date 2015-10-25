@@ -44,8 +44,15 @@
                :tttback-db-user "viqfzfczwvbocw"
                :tttback-db-pass "c-bv0hP8USS5moUYvQ8G8pgqaF"
                :tttback-db-host ~(.getHost (java.net.URI. (System/getenv "DATABASE_URL")))}}
-   :test {:ragtime
-          {:database "jdbc:postgresql://localhost:5432/restful_test?user=restful_test&password=pass_test"}
-          :env {:tttback-db "restful_test"
-                :tttback-db-user "restful_test"
-                :tttback-db-pass "pass_test"}}})
+;   :test {:ragtime
+;          {:database "jdbc:postgresql://localhost:5432/restful_test?user=restful_test&password=pass_test"}
+;          :env {:tttback-db "restful_test"
+;                :tttback-db-user "restful_test"
+;                :tttback-db-pass "pass_test"}}
+   :test {:dependencies [[javax.servlet/servlet-api "2.5"]
+                         [ring-mock "0.1.5"]]
+          :env {:tttback-db "dfpa2m3fu45c9k"
+                :tttback-db-user "viqfzfczwvbocw"
+                :tttback-db-pass "c-bv0hP8USS5moUYvQ8G8pgqaF"
+                :tttback-db-host ~(.getHost (java.net.URI. (System/getenv "DATABASE_URL")))}}
+   })
