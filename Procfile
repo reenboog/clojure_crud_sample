@@ -1,1 +1,1 @@
-web: java $JVM_OPTS -jar target/tttback-standalone.jar
+web: lein ragtime migrate && lein ring server-headless

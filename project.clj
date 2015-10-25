@@ -13,7 +13,7 @@
                  [org.postgresql/postgresql "9.2-1002-jdbc4"]
                  [ragtime "0.3.4"]
                  [environ "0.4.0"]]
-
+  :min-lein-version "2.0.0"
   :plugins [[lein-ring "0.8.10"]
             [ragtime/ragtime.lein "0.3.6"]
             [lein-environ "0.4.0"]]

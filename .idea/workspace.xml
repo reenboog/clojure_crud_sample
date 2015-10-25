@@ -24,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="project.clj" pinned="false" current-in-tab="false">
+      <file leaf-file-name="project.clj" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/project.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
-              <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.29098967" vertical-offset="13" max-vertical-offset="705">
+              <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -54,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Procfile" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Procfile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="677">
-              <caret line="0" column="50" selection-start-line="0" selection-start-column="50" selection-end-line="0" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
+              <caret line="0" column="54" selection-start-line="0" selection-start-column="54" selection-end-line="0" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -146,8 +146,8 @@
         <option value="$PROJECT_DIR$/test/tttback/users+lists_test.clj" />
         <option value="$PROJECT_DIR$/src/tttback/db.clj" />
         <option value="$PROJECT_DIR$/src/tttback/handler.clj" />
-        <option value="$PROJECT_DIR$/project.clj" />
         <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/project.clj" />
       </list>
     </option>
   </component>
@@ -791,18 +791,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project.clj">
+    <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
-          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="677">
+          <caret line="0" column="54" selection-start-line="0" selection-start-column="54" selection-end-line="0" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
+    <entry file="file://$PROJECT_DIR$/project.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="677">
-          <caret line="0" column="50" selection-start-line="0" selection-start-column="50" selection-end-line="0" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.29098967" vertical-offset="13" max-vertical-offset="705">
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
           <folding />
         </state>
       </provider>
