@@ -1,1 +1,1 @@
-web: lein ragtime migrate && java $JVM_OPTS -cp target/tttback-standalone.jar clojure.main -m tttback.handler
+web: java $JVM_OPTS -cp target/tttback-standalone.jar clojure.main -m tttback.handler
