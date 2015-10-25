@@ -11,7 +11,7 @@
                  [ring/ring-json "0.2.0"]
                  [korma "0.3.0-RC5"]
                  [org.postgresql/postgresql "9.2-1002-jdbc4"]
-                 [ragtime "0.4.0"]
+                 [ragtime "0.3.4"]
                  [environ "0.4.0"]]
   :min-lein-version "2.0.0"
   :plugins [[lein-ring "0.8.10"]
@@ -25,7 +25,7 @@
                  :port 9998}}
 
   :ragtime {:migrations ragtime.sql.files/migrations
-            :database ~(System/getenv "DATABASE_URL")}
+            :database "jdbc:////viqfzfczwvbocw:c-bv0hP8USS5moUYvQ8G8pgqaF@ec2-54-235-78-155.compute-1.amazonaws.com:5432/dfpa2m3fu45c9k"}
 
   :profiles
   {:uberjar {:aot :all
