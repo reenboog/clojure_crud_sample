@@ -23,8 +23,8 @@
          :nrepl {:start? true
                  :port 9998}}
 
-  :aliases {"migrate"  ["run" "-m" "user/migrate"]
-            "rollback" ["run" "-m" "user/rollback"]}
+  :aliases {"migrate"  ["run" "-m" "tttback.db/migrate"]
+            "rollback" ["run" "-m" "tttback.db/rollback"]}
 
   :profiles
   {:uberjar {:aot :all}
