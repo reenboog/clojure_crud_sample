@@ -4,8 +4,6 @@
   (:require [tttback.models.users :as users]
             [environ.core :refer [env]]))
 
-; Run each test in an isolated db transaction and rollback
-; afterwards
 (use-fixtures :each with-rollback)
 
 (deftest create-read-users

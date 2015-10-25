@@ -1,6 +1,20 @@
 (ns tttback.models.users
   (:use korma.core)
-  (:require [tttback.entities :as e]))
+  (:require [tttback.entities :as e]
+            [buddy.hashers :as hashers]
+            [clojure.set :refer [map-invert]]))
+
+(def user-levels
+  {"user" ::user
+   "manager" ::manager
+   "admin" ::admin})
+
+;(derive ::manager ::user)
+;(derive ::admin ::manager)
+
+(defn- with-kw-level [user]
+  (assoc user :level
+    (get user-levels (:level user) ::user)))
 
 (defn find-all []
   (select e/users))

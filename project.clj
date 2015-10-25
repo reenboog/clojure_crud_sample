@@ -12,7 +12,9 @@
                  [korma "0.4.0"]
                  [org.postgresql/postgresql "9.2-1002-jdbc4"]
                  [org.clojure/java.jdbc "0.3.7"]
-                 ;[ragtime "0.3.4"]
+                 [buddy/buddy-hashers "0.4.0"]
+                 [buddy/buddy-auth "0.4.0"]
+                 [crypto-random "1.2.0"]
                  [ragtime "0.5.2"]
                  [environ "0.4.0"]]
   :min-lein-version "2.0.0"
