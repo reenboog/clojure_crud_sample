@@ -26,7 +26,7 @@
 
   :ragtime {:migrations ragtime.sql.files/migrations
             ;:database (str (clojure.string/replace (System/getenv "DATABASE_URL") #"postgres://" "jdbc:postgresql://") "?user=viqfzfczwvbocw&password=c-bv0hP8USS5moUYvQ8G8pgqaF")}
-            :database (let [db_url (System/getenv "DATABASE_URL")]
+            :database ~(let [db_url (System/getenv "DATABASE_URL")]
                        (str "jdbc:postgresql://" (.substring db_url (inc (.indexOf db_url "@"))) "?user=viqfzfczwvbocw&password=c-bv0hP8USS5moUYvQ8G8pgqaF"))}
             ;:database "jdbc:postgresql://viqfzfczwvbocw:c-bv0hP8USS5moUYvQ8G8pgqaF@ec2-54-235-78-155.compute-1.amazonaws.com:5432/dfpa2m3fu45c9k?user=viqfzfczwvbocw&password=c-bv0hP8USS5moUYvQ8G8pgqaF"}
 
