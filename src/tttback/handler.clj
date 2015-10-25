@@ -15,7 +15,7 @@
   (context "/users" []
     (GET "/" []
       {:status 200
-       :body {:count (users/count-users)
+       :body {:count 10
               :results (users/find-all)}})
     (POST "/" {user :body}
       (let [new-user (users/create user)]
