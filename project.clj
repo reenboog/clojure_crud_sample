@@ -25,7 +25,7 @@
                  :port 9998}}
 
   :ragtime {:migrations ragtime.sql.files/migrations
-            :database "jdbc:////viqfzfczwvbocw:c-bv0hP8USS5moUYvQ8G8pgqaF@ec2-54-235-78-155.compute-1.amazonaws.com:5432/dfpa2m3fu45c9k"}
+            :database "jdbc://viqfzfczwvbocw:c-bv0hP8USS5moUYvQ8G8pgqaF@ec2-54-235-78-155.compute-1.amazonaws.com:5432/dfpa2m3fu45c9k"}
 
   :profiles
   {:uberjar {:aot :all
