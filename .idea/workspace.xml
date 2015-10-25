@@ -28,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/project.clj">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.4680851" vertical-offset="141" max-vertical-offset="705">
-              <caret line="27" column="75" selection-start-line="27" selection-start-column="75" selection-end-line="27" selection-end-column="75" />
+              <caret line="27" column="177" selection-start-line="27" selection-start-column="177" selection-end-line="27" selection-end-column="177" />
               <folding />
             </state>
           </provider>
@@ -789,7 +789,7 @@
     <entry file="file://$PROJECT_DIR$/project.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4680851" vertical-offset="141" max-vertical-offset="705">
-          <caret line="27" column="75" selection-start-line="27" selection-start-column="75" selection-end-line="27" selection-end-column="75" />
+          <caret line="27" column="177" selection-start-line="27" selection-start-column="177" selection-end-line="27" selection-end-column="177" />
           <folding />
         </state>
       </provider>
