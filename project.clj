@@ -11,7 +11,7 @@
                  [ring/ring-json "0.2.0"]
                  [korma "0.3.0-RC5"]
                  [org.postgresql/postgresql "9.2-1002-jdbc4"]
-                 [ragtime "0.3.4"]
+                 [ragtime "0.4.0"]
                  [environ "0.4.0"]]
   :min-lein-version "2.0.0"
   :plugins [[lein-ring "0.8.10"]
