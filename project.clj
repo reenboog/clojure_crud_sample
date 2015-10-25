@@ -21,8 +21,8 @@
             [lein-environ "0.4.0"]]
   :uberjar-name "tttback-standalone.jar"
 
-  :aliases {"migrate"  ["run" "-m" "tttback.db/migrate"]
-            "rollback" ["run" "-m" "tttback.db/rollback"]}
+  :aliases {"migrate"  ["run" "-m" "tttback.migration/migrate"]
+            "rollback" ["run" "-m" "tttback.migration/rollback"]}
 
   :main ^:skip-aot tttback.handler
   :ring {:handler tttback.handler/app
