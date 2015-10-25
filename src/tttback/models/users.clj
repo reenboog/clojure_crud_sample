@@ -1,5 +1,6 @@
 (ns tttback.models.users
-  (:use korma.core)
+  (:use korma.core
+        korma.mysql)
   (:require [tttback.entities :as e]))
 
 (defn find-all []
@@ -31,7 +32,7 @@
 
 (defn count-users []
   (let [agg (select e/users
-              (aggregate (korma.core/count :*) :cnt))]
+              (aggregate (count :*) :cnt))]
     (get-in agg [0 :cnt] 0)))
 
 (defn delete-user [user]
