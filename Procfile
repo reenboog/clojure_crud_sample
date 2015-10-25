@@ -1,1 +1,1 @@
-web: lein ragtime migrate && lein ring server-headless
+web: lein ring server-headless
