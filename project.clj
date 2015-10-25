@@ -25,7 +25,7 @@
                  :port 9998}}
 
   :ragtime {:migrations ragtime.sql.files/migrations
-            :database ~(str (clojure.string/replace (System/getenv "DATABASE_URL") #"postgres://" "jdbc:postgresql://") "?user=viqfzfczwvbocw&password=c-bv0hP8USS5moUYvQ8G8pgqaF")}
+            :database (str (clojure.string/replace (System/getenv "DATABASE_URL") #"postgres://" "jdbc:postgresql://") "?user=viqfzfczwvbocw&password=c-bv0hP8USS5moUYvQ8G8pgqaF")}
 
   :profiles
   {:uberjar {:aot :all}
