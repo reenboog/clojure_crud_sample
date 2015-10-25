@@ -32,7 +32,7 @@
 
 (defn count-users []
   (let [agg (select e/users
-              (aggregate (ksql.count :*) :cnt))]
+              (aggregate (ksql/count :*) :cnt))]
     (get-in agg [0 :cnt] 0)))
 
 (defn delete-user [user]
