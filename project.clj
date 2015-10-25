@@ -11,10 +11,11 @@
                  [ring/ring-json "0.2.0"]
                  [korma "0.3.0-RC5"]
                  [org.postgresql/postgresql "9.2-1002-jdbc4"]
-                 [ragtime "0.4.0"]
+                 [ragtime "0.3.4"]
                  [environ "0.4.0"]]
   :min-lein-version "2.0.0"
   :plugins [[lein-ring "0.8.10"]
+            [ragtime/ragtime.lein "0.3.6"]
             [lein-environ "0.4.0"]]
   :uberjar-name "tttback-standalone.jar"
 
@@ -23,8 +24,8 @@
          :nrepl {:start? true
                  :port 9998}}
 
-  :aliases {"migrate"  ["run" "-m" "tttback.db/migrate"]
-            "rollback" ["run" "-m" "tttback.db/rollback"]}
+  :ragtime {:migrations ragtime.sql.files/migrations
+            :database ~(System/getenv "DATABASE_URL")}
 
   :profiles
   {:uberjar {:aot :all}
