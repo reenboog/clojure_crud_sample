@@ -19,6 +19,7 @@
             [lein-environ "0.4.0"]]
   :uberjar-name "tttback-standalone.jar"
 
+  :main ^:skip-aot tttback.handler
   :ring {:handler tttback.handler/app
          :nrepl {:start? true
                  :port 9998}}
