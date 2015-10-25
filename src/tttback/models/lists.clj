@@ -28,9 +28,8 @@
   (find-all-by :user_id (:id userdata)))
 
 (defn count-lists []
-  (let [agg (select e/lists
-              (aggregate (count :*) :cnt))]
-    (get-in agg [0 :cnt] 0)))
+  (let [agg (select e/lists)]
+    (count agg)))
 
 (defn create [listdata]
   (let [newlist (insert e/lists
