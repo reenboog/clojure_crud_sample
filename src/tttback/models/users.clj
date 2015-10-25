@@ -31,7 +31,7 @@
 
 (defn count-users []
   (let [agg (select e/users
-              (aggregate (count :*) :cnt))]
+              (aggregate (korma.core/count :*) :cnt))]
     (get-in agg [0 :cnt] 0)))
 
 (defn delete-user [user]
