@@ -11,11 +11,10 @@
                  [ring/ring-json "0.2.0"]
                  [korma "0.3.0-RC5"]
                  [org.postgresql/postgresql "9.2-1002-jdbc4"]
-                 [ragtime "0.3.4"]
+                 [ragtime "0.5.2"]
                  [environ "0.4.0"]]
   :min-lein-version "2.0.0"
   :plugins [[lein-ring "0.8.10"]
-            [ragtime/ragtime.lein "0.3.6"]
             [lein-environ "0.4.0"]]
   :uberjar-name "tttback-standalone.jar"
 
@@ -24,22 +23,16 @@
          :nrepl {:start? true
                  :port 9998}}
 
-  :ragtime {:migrations ragtime.sql.files/migrations
-            :database "jdbc://viqfzfczwvbocw:c-bv0hP8USS5moUYvQ8G8pgqaF@ec2-54-235-78-155.compute-1.amazonaws.com:5432/dfpa2m3fu45c9k"}
+  :aliases {"migrate"  ["run" "-m" "user/migrate"]
+            "rollback" ["run" "-m" "user/rollback"]}
 
   :profiles
-  {:uberjar {:aot :all
-             :env {:tttback-db "dfpa2m3fu45c9k"
-                   :tttback-db-user "viqfzfczwvbocw"
-                   :tttback-db-pass "c-bv0hP8USS5moUYvQ8G8pgqaF"
-                   :tttback-db-host ~(System/getenv "DATABASE_URL")}}
+  {:uberjar {:aot :all}
    :dev {:dependencies [[javax.servlet/servlet-api "2.5"]
                         [ring-mock "0.1.5"]]
-
          :env {:tttback-db "dfpa2m3fu45c9k"
                :tttback-db-user "viqfzfczwvbocw"
-               :tttback-db-pass "c-bv0hP8USS5moUYvQ8G8pgqaF"
-               :tttback-db-host ~(System/getenv "DATABASE_URL")}}
+               :tttback-db-pass "c-bv0hP8USS5moUYvQ8G8pgqaF"}}
    :test {:ragtime
           {:database "jdbc:postgresql://localhost:5432/restful_test?user=restful_test&password=pass_test"}
           :env {:tttback-db "restful_test"
