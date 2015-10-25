@@ -72,7 +72,7 @@
         {:status 201
          :headers {"Location" (str "/products/" (:id new-prod))}})))
 
-  (route/not-found (response {:message ~(System/getenv "DATABASE_URL")})))
+  (route/not-found (response {:message (System/getenv "DATABASE_URL")})))
 
 (defn wrap-log-request [handler]
   (fn [req]
