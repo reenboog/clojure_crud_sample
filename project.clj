@@ -28,7 +28,11 @@
             :database ~(System/getenv "DATABASE_URL")}
 
   :profiles
-  {:uberjar {:aot :all}
+  {:uberjar {:aot :all
+             :env {:tttback-db "dfpa2m3fu45c9k"
+                   :tttback-db-user "viqfzfczwvbocw"
+                   :tttback-db-pass "c-bv0hP8USS5moUYvQ8G8pgqaF"
+                   :tttback-db-host ~(System/getenv "DATABASE_URL")}}
    :dev {:dependencies [[javax.servlet/servlet-api "2.5"]
                         [ring-mock "0.1.5"]]
 
