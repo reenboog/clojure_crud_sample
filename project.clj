@@ -25,7 +25,7 @@
                  :port 9998}}
 
   :ragtime {:migrations ragtime.sql.files/migrations
-            :database ~(str "jdbc://" (System/getenv "DATABASE_URL"))}
+            :database ~(System/getenv "DATABASE_URL")}
 
   :profiles
   {:uberjar {:aot :all}
