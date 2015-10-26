@@ -67,7 +67,7 @@
 
 (defn password-matches?
   [id password]
-  (some-> (select e/users)
+  (some-> (select* e/users)
     (fields :password_digest)
     (where {:id id})
     select
