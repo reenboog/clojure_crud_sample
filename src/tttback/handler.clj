@@ -138,7 +138,7 @@
       {:handler {:and [authenticated-user (user-can "manage-products")]}
        :on-error unauthorized-handler}))
 
-  (route/not-found (response {:message "Page not found"})))
+  (route/not-found (response {:message "Unknown request"})))
 
 (def app
   (-> app-routes

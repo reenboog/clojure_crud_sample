@@ -6,11 +6,9 @@
 
 (def user-levels
   {"user" ::user
-   "manager" ::manager
    "admin" ::admin})
 
-(derive ::manager ::user)
-(derive ::admin ::manager)
+(derive ::admin ::user)
 
 (defn- with-kw-level [user]
   (assoc user :level
