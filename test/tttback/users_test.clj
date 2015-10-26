@@ -2,7 +2,9 @@
   (:use clojure.test
         tttback.test-core)
   (:require [tttback.models.users :as users]
-            [environ.core :refer [env]]))
+            [environ.core :refer [env]]
+            [restful-clojure.entities :as e]
+            [korma.core :as sql]))
 
 (use-fixtures :each with-rollback)
 
