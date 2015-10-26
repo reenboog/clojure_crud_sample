@@ -9,7 +9,7 @@
                  [compojure "1.1.6"]
                  [cheshire "5.3.1"]
                  [ring/ring-json "0.2.0"]
-                 [korma "0.3.0-RC5"]
+                 [korma "0.4.0"]
                  [org.postgresql/postgresql "9.2-1002-jdbc4"]
                  [org.clojure/java.jdbc "0.3.7"]
                  [buddy/buddy-hashers "0.4.0"]
