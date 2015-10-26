@@ -10,7 +10,7 @@
             [tttback.models.users :as users]
             [tttback.models.lists :as lists]
             [tttback.models.products :as products]
-            [ttback.auth :refer [auth-backend user-can user-isa user-has-id authenticated-user unauthorized-handler make-token!]]
+            [tttback.auth :refer [auth-backend user-can user-isa user-has-id authenticated-user unauthorized-handler make-token!]]
             [buddy.auth.middleware :refer [wrap-authentication wrap-authorization]]
             [buddy.auth.accessrules :refer [restrict]]
             [environ.core :refer [env]]))
