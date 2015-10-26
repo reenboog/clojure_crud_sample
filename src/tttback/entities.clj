@@ -24,3 +24,8 @@
   (many-to-many lists :lists_products {:lfk :product_id
                                        :rfk :list_id})
   (entity-fields :title :description))
+
+(defentity auth-tokens
+  (pk :id)
+  (table :auth_tokens)
+  (belongs-to users {:fk :user_id}))

@@ -9,8 +9,8 @@
    "manager" ::manager
    "admin" ::admin})
 
-;(derive ::manager ::user)
-;(derive ::admin ::manager)
+(derive ::manager ::user)
+(derive ::admin ::manager)
 
 (defn- with-kw-level [user]
   (assoc user :level

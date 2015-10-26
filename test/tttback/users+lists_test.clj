@@ -26,7 +26,8 @@
 (deftest cascading-operations
   (testing "Deleting user removes associated lists"
     (let [jack (users/create {:name "Jack"
-                              :email "beanstalkz@example.com"})
+                              :email "beanstalkz@example.com"
+                              :password "s3cr3t"})
           tmp-list (lists/create {:user_id (jack :id)
                                   :title "Talking points"})]
       (users/delete-user jack)
